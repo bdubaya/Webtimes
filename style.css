@@ -6,13 +6,12 @@ ul									{ list-style: none; }
 p                                   { margin: 15px 0; }
 h1, h2 {
 	font-weight: normal;
-	margin-bottom: 
 }
 
 /* 
 	LEVEL ONE
 */
-ul.dropdown                         { position: relative; }
+ul.dropdown                         { position: absolute; }
 ul.dropdown li                      { float: left; zoom: 1;}
 ul.dropdown a:hover		            { color: #000; }
 ul.dropdown a:active                { color: #ffa500; }
