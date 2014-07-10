@@ -7,8 +7,18 @@
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" language="javascript" src="jquery.dropdown.js"></script>
 	
+	<link rel="stylesheet" href="FlexSlider/flexslider.css" type="text/css">
+	<script src="FlexSlider/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	  $(window).load(function() {
+		$('.flexslider').flexslider();
+	  });
+	</script>
 	<style>
-		
+		.flexslider {
+			width: 200px;
+			height: 200px;
+		}
 		
 	</style>
 </head>
@@ -20,7 +30,7 @@
 		<h2>"He's pretty good at computer." -Bennie's mom</h2>
 	
 	
-		<ul class="dropdown">
+		<ul class="dropdown" margin-bottom="10px">
 			<li><a href="#">Bennie: a History</a>
 				<ul class="sub_menu">
 					<li><a href="#">Early Daze</a></li>
@@ -48,11 +58,28 @@
 				
 			</li>
 		</ul>
-	</header></div>
+	</header>
+	<p>Look, it's body text</p>
+	
+	<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="slide1.PNG" />
+    </li>
+    <li>
+      <img src="slide2.jpg" />
+    </li>
+    <li>
+      <img src="slide3.jpg" />
+    </li>
+  </ul>
+</div>
+	
+	</div>
 	
 	<div>
 	
-		<p>Look, it's body text</p>
+		
 	
 	</div>
 </body>
