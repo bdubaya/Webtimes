@@ -7,18 +7,9 @@
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" language="javascript" src="jquery.dropdown.js"></script>
 	
-	<link rel="stylesheet" href="FlexSlider/flexslider.css" type="text/css">
-	<script src="FlexSlider/jquery.flexslider.js"></script>
-	<script type="text/javascript" charset="utf-8">
-	  $(window).load(function() {
-		$('.flexslider').flexslider();
-	  });
-	</script>
+	
 	<style>
-		.flexslider {
-			width: 200px;
-			height: 200px;
-		}
+	
 		
 	</style>
 </head>
@@ -54,26 +45,59 @@
 					<li><a href="#">#Teens in the Mist</a></li>
 				</ul>
 			</li>
-			<li><a href="contact.html">Contact</a>
+			<li><a href="contact.html">Contact, etc.</a>
+				<ul class="sub_menu">
+					<li><a href="contact.html">Abra-abra-cadabra. I wanna reach out and grab ya</a></li>
+					<li>
+						<a id="show_fig1" href="#">Helpful Information</a>
+						<ul class="enlarge">					
+							<span id="fig1" style="display:none">
+								<img src="fig1.png"  alt="Fig 1: Eating One Battery"/>
+								<br />Fig. 1: Eating One Battery
+							</span>
+						</ul>
+						<script>
+							$(document).ready(function(){
+								$('#show_fig1').on("click", function(){
+									$('#fig1').toggle();
+								});
+								$('#show_fig1').on("mouseleave", function(){
+									$('#fig1').hide();
+								});
+							});
+						</script>
+					</li>
+					<li>
+						<a id="show_fig2" href="#">More Helpful Information</a>
+						<ul class="enlarge">					
+							<span id="fig2" style="display:none">
+								<img src="fig2.png"  alt="Fig. 2: Eating Five Batteries"/>
+								<br />Fig. 2: Eating Five Batteries
+							</span>
+						</ul>
+						<script>
+							$(document).ready(function(){
+								$('#show_fig2').on("click", function(){
+									$('#fig2').toggle('slow');
+								});
+							});
+						</script>
+					</li>
+					
+					
+					
+					
+					
+				</ul>
 				
 			</li>
 		</ul>
 	</header>
+	<br>
 	<p>Look, it's body text</p>
+	<p>Look, it's <i>more</i> body text</p>
 	
-	<div class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="slide1.PNG" />
-    </li>
-    <li>
-      <img src="slide2.jpg" />
-    </li>
-    <li>
-      <img src="slide3.jpg" />
-    </li>
-  </ul>
-</div>
+	
 	
 	</div>
 	
