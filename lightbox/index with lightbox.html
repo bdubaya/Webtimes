@@ -6,8 +6,9 @@
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection"/>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" language="javascript" src="jquery.dropdown.js"></script>
-	<script src="lightbox/js/lightbox.min.js"></script>
-	<link href="lightbox/css/lightbox.css" rel="stylesheet" />
+	<script src="js/lightbox.min.js"></script>
+	<link href="css/lightbox.css" rel="stylesheet" />
+	
 	
 	<style>
 	
@@ -49,10 +50,24 @@
 			<li><a href="contact.html">Contact, etc.</a>
 				<ul class="sub_menu">
 					<li><a href="contact.html">Abra-abra-cadabra. I wanna reach out and grab ya</a></li>
-					<li><a id="show_fig1" data-lightbox="fig1" href="fig1.png"
-						data-title="Fig 1: Eating One Battery">Helpful Information</a></li>
-					<li><a id="show_fig2" data-lightbox="fig2" href="fig2.png"
-						data-title="Fig 2: Eating Five Batteries">More Helpful Information</a></li>
+					<li>
+						<a id="show_fig1" href="#">Helpful Information</a>
+						<ul class="enlarge">					
+							<span id="fig1" style="display:none">
+								<img src="fig1.png"  alt="Fig 1: Eating One Battery"/>
+								<br />Fig. 1: Eating One Battery
+							</span>
+						</ul>
+					</li>
+					<li>
+						<a id="show_fig2" href="#">More Helpful Information</a>
+						<ul class="enlarge">					
+							<span id="fig2" style="display:none">
+								<img src="fig2.png"  alt="Fig. 2: Eating Five Batteries"/>
+								<br />Fig. 2: Eating Five Batteries
+							</span>
+						</ul>
+					</li>
 					
 					
 					
