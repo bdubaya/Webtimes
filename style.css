@@ -8,12 +8,17 @@ h1, h2 {
 	font-weight: normal;
 }
 
-
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /* 
 	LEVEL ONE
 */
+/*
 ul.dropdown                         { position: absolute; }
+*/
 ul.dropdown li                      { float: left; zoom: 1;}
 ul.dropdown a:hover		            { color: #000; }
 ul.dropdown a:active                { color: #ffa500; }
