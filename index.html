@@ -72,11 +72,16 @@
 				</ul>	
 			</td>
 			
-			<td rowspan="3" valign="top"> 
-				<p>Do you hate Bennie? Tell him why!</p>
-				<form action="MAILTO:waters.bennie@gmail.com" method="post" enctype="text/plain">
-					<input type="text" name="status"><br>
-					<input type="submit" value="Send">
+			<td rowspan="3" valign="top">
+				<form>
+					Do you hate Bennie? Tell him why!<br>
+					<textarea name="feedback" id="feedback" cols="30" rows="6"></textarea><br>
+					<input id="sub" type="submit" value="Submit">
+					<script>
+						$('#sub').click(function(){
+							$('#sub').attr('value', 'Thanks, jerk');
+						});
+					</script>
 				</form>
 			</td>
 		</tr>
