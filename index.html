@@ -8,6 +8,7 @@
 	<script type="text/javascript" language="javascript" src="jquery.dropdown.js"></script>
 	<script src="lightbox/js/lightbox.min.js"></script>
 	<link href="lightbox/css/lightbox.css" rel="stylesheet"/>
+	<script type="text/javascript" language="javascript" src="tweecool/tweecool.js"></script>
 	<style>
 	
 		
@@ -27,9 +28,25 @@
 		</td><td></td></tr>
 		
 		<tr> 
-			<td rowspan="3" valign="top" width="200px">
+			<td rowspan="3" valign="top" width="425px">
+				<!--
 				<a class="twitter-timeline" href="https://twitter.com/bennie_waters" data-widget-id="487572961491030017">Tweets by @bennie_waters</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				-->
+				<div class="twitter-widget">
+					<div id="tweecool"></div>
+					<button class="button" value="test"> Oh my gosh, Bennie, shut the hell up. </button>
+				</div>
+				<script>
+					$(document).ready(function() {
+						$('#tweecool').tweecool({
+							username : 'bennie_waters',
+							limit : 5,
+							show_time: true
+						});
+					});
+				</script>
+				
 			</td>
 			
 			<td valign="top" height="10px"> <!-- The bulk of the site content is in the center column -->
@@ -76,7 +93,7 @@
 				<form>
 					Do you hate Bennie? Tell him why!<br>
 					<textarea name="feedback" id="feedback" cols="30" rows="6"></textarea><br>
-					<input id="sub" type="submit" value="Submit">
+					<div class="button-holder"> <input id="sub" type="submit" value="Submit"></div>
 					<script>
 						$('#sub').click(function(){
 							$('#sub').attr('value', 'Thanks, jerk');
