@@ -3,12 +3,14 @@
 <head>
 	<title> Webtimes with Bennie</title>
 	
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection"/>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" language="javascript" src="jquery.dropdown.js"></script>
 	<script src="lightbox/js/lightbox.min.js"></script>
 	<link href="lightbox/css/lightbox.css" rel="stylesheet"/>
 	<script type="text/javascript" language="javascript" src="tweecool/tweecool.js"></script>
+	<script src="hype-button.js"></script>
 	<style>
 	
 		
@@ -35,7 +37,7 @@
 				-->
 				<div class="twitter-widget">
 					<div id="tweecool"></div>
-					<button class="button" value="test"> Oh my gosh, Bennie, shut the hell up. </button>
+					<!-- <button class="button" value="test"> Oh my gosh, Bennie, shut the hell up. </button> -->
 				</div>
 				<script>
 					$(document).ready(function() {
@@ -80,9 +82,9 @@
 					<li><a href="contact.html">Contact, etc.</a>
 						<ul class="sub_menu">
 							<li><a href="contact.html">Abra-abra-cadabra. I wanna reach out and grab ya</a></li>
-							<li><a id="show_fig1" data-lightbox="fig1" href="fig1.png" 
+							<li><a id="show_fig1" data-lightbox="fig1" href="images\fig1.png" 
 								data-title="Fig 1: Eating One Battery">Helpful Information</a></li>
-							<li><a id="show_fig2" data-lightbox="fig2" href="fig2.png"
+							<li><a id="show_fig2" data-lightbox="fig2" href="images\fig2.png"
 								data-title="Fig 2: Eating Five Batteries">More Helpful Information</a></li>
 						</ul>
 					</li>
@@ -111,11 +113,22 @@
 			Welcome to the thing. Maybe one day there will be content here.
 		</td>
 	</tr>
+	<tr valign="bottom">
+		<td style="text-align:center">
+			<div id="hype-btn"><i class="fa fa-paw icon-large"></i><span> GET HYPE </span></div>
+			
+			<script>
+				$(function (){
+					var b = new PS.HypeButton('hype-btn');
+				});
+			</script>
+		</td>
+	</tr>
 	<tr>
-		<td style="text-align:center" valign="bottom">
-			<a href="http://www.twitter.com/bennie_waters"><img src="twitter.png" alt="throw up on my twitter feed" width="42" height="42"></a>
-			<a href="http://www.facebook.com/bennie.waters"><img src="facebook.png" alt="throw up on my facebook wall" width="42" height="42"></a>
-			<a href="http://www.linkedin.com/pub/bennie-waters/1b/86b/949"><img src="linkedin.png" alt="give me a job" width="42" height="42"></a>
+		<td style="text-align:center" valign="bottom"colspan="3">
+			<a href="http://www.twitter.com/bennie_waters"><img src="images\twitter.png" alt="throw up on my twitter feed" width="42" height="42"></a>
+			<a href="http://www.facebook.com/bennie.waters"><img src="images\facebook.png" alt="throw up on my facebook wall" width="42" height="42"></a>
+			<a href="http://www.linkedin.com/pub/bennie-waters/1b/86b/949"><img src="images\linkedin.png" alt="give me a job" width="42" height="42"></a>
 		</td>
 	</tr>
 	

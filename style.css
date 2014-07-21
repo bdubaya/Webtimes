@@ -13,6 +13,25 @@ table {
 	margin-right: auto;
 }
 
+#hype-btn {
+	background-color: yellow;
+	width: 270px;
+	height: 50px;
+	border-radius: 12px;
+	border: 6px solid black;
+	box-shadow: 5px 5px 10px #777;
+}
+
+#hype-btn span {
+	top: 50%;
+	font-weight: bold;
+}
+
+#hype-btn i {
+	left: 20px;
+	top: 8px;
+}
+
 .button-holder {
 	text-align: center;
 }
