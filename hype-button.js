@@ -16,6 +16,6 @@
 						b.css('background', 'radial-gradient(circle 80px at ' + now + 'px 30px, #ffaaaa, red)')
 					}
 				})
-		}, 8000);
+		}, 2000);
 	}
 }(window.PS = window.PS || {}));
