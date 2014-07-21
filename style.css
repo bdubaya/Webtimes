@@ -15,11 +15,13 @@ table {
 
 #hype-btn {
 	background-color: yellow;
+	position: absolute;
 	width: 270px;
 	height: 50px;
 	border-radius: 12px;
 	border: 6px solid black;
 	box-shadow: 5px 5px 10px #777;
+	line-height: 50px;
 }
 
 #hype-btn span {
@@ -28,8 +30,26 @@ table {
 }
 
 #hype-btn i {
+	position: absolute;
 	left: 20px;
 	top: 8px;
+}
+
+.my-fancy-container {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 60px;
+    padding: 10px;
+}
+
+.my-text {
+    font-family: "Courier-new";
+}
+
+.my-icon {
+    vertical-align: middle;
+    font-size: 40px;
 }
 
 .button-holder {

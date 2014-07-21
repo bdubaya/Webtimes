@@ -5,12 +5,13 @@
 	
 	<link href="font-awesome/css/font-awesome.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection"/>
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" language="javascript" src="jquery.dropdown.js"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" language="javascript" src="scripts/jquery.dropdown.js"></script>
+	<script type="text/javascript" language="javascript" src="scripts/jquery.easing.1.3.js"></script>
 	<script src="lightbox/js/lightbox.min.js"></script>
 	<link href="lightbox/css/lightbox.css" rel="stylesheet"/>
 	<script type="text/javascript" language="javascript" src="tweecool/tweecool.js"></script>
-	<script src="hype-button.js"></script>
+	<script src="scripts/hype-button.js"></script>
 	<style>
 	
 		
@@ -114,8 +115,12 @@
 		</td>
 	</tr>
 	<tr valign="bottom">
-		<td style="text-align:center">
-			<div id="hype-btn"><i class="fa fa-paw icon-large"></i><span> GET HYPE </span></div>
+		<td >
+			<div id="hype-btn" class="my-fancy-container">
+				<span id="hype-icon" class='my-icon fa fa-paw'></span>
+				<!--<i class='my-icon fa fa-paw'></i>class="fa fa-paw" style="vertical-align:middle" ></i> -->
+				<span id="hype" > GET HYPE </span>
+			</div>
 			
 			<script>
 				$(function (){
