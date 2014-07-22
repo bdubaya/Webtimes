@@ -15,13 +15,11 @@ table {
 
 #hype-btn {
 	background-color: yellow;
-	position: absolute;
 	width: 270px;
 	height: 50px;
 	border-radius: 12px;
 	border: 6px solid black;
 	box-shadow: 5px 5px 10px #777;
-	line-height: 50px;
 }
 
 #hype-btn span {
@@ -30,7 +28,6 @@ table {
 }
 
 #hype-btn i {
-	position: absolute;
 	left: 20px;
 	top: 8px;
 }
