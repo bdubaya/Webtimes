@@ -35,23 +35,6 @@ table {
 	top: 8px;
 }
 
-.my-fancy-container {
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    margin: 60px;
-    padding: 10px;
-}
-
-.my-text {
-    font-family: "Courier-new";
-}
-
-.my-icon {
-    vertical-align: middle;
-    font-size: 40px;
-}
-
 .button-holder {
 	text-align: center;
 }

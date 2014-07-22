@@ -66,7 +66,8 @@
 					duration: 1000,
 					step: function (tilt) {
 						b.css('transform', 'rotate(' + tilt + 'deg)');
-					}
+					},
+					easing: 'easeOutBounce'
 				});
 		});
 		
