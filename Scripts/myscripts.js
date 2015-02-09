@@ -3,6 +3,7 @@ var main = function(){
 		smoothHeight: true
 		
 	});
+	
 };
 
 $(window).load(main);
