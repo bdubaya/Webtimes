@@ -1,7 +1,7 @@
 var main = function(){
 	$('.flexslider').flexslider({
-		smoothHeight: true
-		
+		smoothHeight: true,
+		slideshowSpeed: 5000
 	});
 	
 };
